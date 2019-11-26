@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: white;
+    text-align: center;
+    background-color: #000;
+}
+
+header, .left, .right {
+    position: absolute;
+}
+
+header {
+    left: 10px;
+    top: 10px;
+    right: 10px;
+    border: 1px solid white;
+    height: 150px;
+}
+
+header h1 {
+    font-size: 40px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.left {
+    left: 10px;
+    top: 170px;
+    bottom: 10px;
+    border: 1px solid white;
+    width: 15%;
+}
+
+.left ul {
+    overflow: auto;
+}
+
+.left ul li {
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.left ul li.selected {
+    color: red;
+    text-shadow: 0 0 1px white;
+}
+
+.right {
+    top: 170px;
+    right: 10px;
+    bottom: 10px;
+    left: -webkit-calc(15% + 20px);
+    left: calc(15% + 20px);
+    border: 1px solid white;
+}
+
+#type {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 6px;
+    width: 130px;
+    list-style-type: none;
+    overflow: auto;
+}
+
+#type li {
+    float: left;
+    width: 64px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+#type li.selected {
+    color: black;
+    background-color: white;
+}
+
+input[type="range"] {
+    border-radius: 10px;
+    -webkit-appearance: none;
+    height: 8px;
+    outline: none;
+    background-color: #999;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+
+
+
